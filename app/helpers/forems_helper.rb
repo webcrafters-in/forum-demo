@@ -1,0 +1,2 @@
+module ForemsHelper
+end

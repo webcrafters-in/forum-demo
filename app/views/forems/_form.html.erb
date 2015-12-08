@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12">
+<%= form_for @forem do |forem| %>
+    <%= label_tag "Message Text" %><br/>
+    <%= forem.text_area :text, :class => "redactor" %><br/>
+    <%= label_tag "Upload Image"%>
+    <%= forem.file_field :image%><br/>
+    <%= forem.submit :class => "btn btn-default" %>
+<% end %>
+    <%= link_to "Back", forems_path %> |
+    <%= link_to "Home", root_path %>
+  </div>
+</div>
